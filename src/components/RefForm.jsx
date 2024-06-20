@@ -15,20 +15,22 @@ const RefForm = () => {
     useEffect(()=>{
         nameRef.current.focus();
     }, [])
-       return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input ref={nameRef}  type="text"  name="name"  />
-                <br />
-                <input ref={emailRef} type="email" name="email" id="" />
-                <br />
-                <input  type="password" name="password"  />
-                <br />
-                <input type="phone" name="phone" />
-                <br />
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+
+
+    return (
+    <div>
+        <form onSubmit={handleSubmit}>
+            <input ref={nameRef}  type="text"  name="name"  />
+            <br />
+            <input ref={emailRef} type="email" name="email" id="" />
+            <br />
+            <input  type="password" name="password"  />
+            <br />
+            <input type="phone" name="phone" />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
     );
 };
 
